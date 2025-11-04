@@ -3,13 +3,25 @@
 @tailwind utilities;
 
 :root {
-  --color-gold: #FFD700;
+  --background: #000000;
+  --text: #f4f4f4;
+  --gold: #facc15;
 }
 
-.text-gold {
-  color: #FFD700;
+body {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
-.border-gold {
-  border-color: #FFD700;
+h1, h2, h3, h4, h5 {
+  font-weight: 700;
+}
+
+a {
+  transition: all 0.3s ease;
+}
+
+* {
+  box-sizing: border-box;
 }
